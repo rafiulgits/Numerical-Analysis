@@ -36,7 +36,7 @@ def  main():
 	x = next(a, b, equation)
 
 	# continously check for an defined functional value
-	while abs(eval(equation)) > 0.0001:
+	while abs(b-a) > 0.00001:
 		# shifting the interval left
 		if(eval(equation) > 0) :
 			b = x
@@ -45,7 +45,7 @@ def  main():
 		else:
 			a = x
 		# next iteration
-		
+
 		x = next(a, b, equation)
 
 	# print out the approximate root

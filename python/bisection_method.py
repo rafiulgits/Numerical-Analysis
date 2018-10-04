@@ -19,7 +19,7 @@ def  main():
 	x = (a+b)/2
 
 	# continously check for an defined functional value
-	while abs(eval(equation)) > 0.0001:
+	while abs(b-a) > 0.00001:
 		# shifting the interval left
 		if(eval(equation) > 0) :
 			b = x
@@ -27,7 +27,7 @@ def  main():
 		# shifting the interval right
 		else:
 			a = x
-			
+
 		# next mid point
 		x = (a+b)/2
 

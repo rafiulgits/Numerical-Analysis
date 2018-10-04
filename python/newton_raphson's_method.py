@@ -30,6 +30,7 @@ def  main():
 	a = float(a)
 	b = float(b)
 
+
 	# iterate initial x
 	x = (a+b)/2
 
