@@ -1,3 +1,2 @@
 # ignore ipython check point
 **/*.ipynb_checkpoints/
-*octave/
