@@ -1,14 +1,17 @@
 import math
 
+# functional value use degree instead of radian
+# make all trigometric funcion that will take defree value
+ 
 # ##################################################
 # Trigonometrical operations to handle radian value
 # ##################################################
 # set sin functional operation
-sin = lambda x : math.sin(math.pi/(180/x))
+sin = lambda x : math.sin((math.pi/180)*x)
 # set cos functional openration
-cos = lambda x : math.cos(math.pi/(180/x))
+cos = lambda x : math.cos((math.pi/180)*x)
 # set tan functional operation 
-tan = lambda x : math.tan(math.pi/(180/x))
+tan = lambda x : math.tan((math.pi/180)*x)
 # set cot functional operation
 cot = lambda x : 1 /tan(x)
 # set sec functional operation
@@ -18,7 +21,6 @@ cosec = lambda x : 1 /sin(x)
 
 # set ln or log10 base operation
 ln = lambda x: math.log10(x)
-
 # driver function
 def main():
 	# take the equation
