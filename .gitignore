@@ -1,2 +1,4 @@
 # ignore ipython check point
 **/*.ipynb_checkpoints/
+*.exe
+*.o
