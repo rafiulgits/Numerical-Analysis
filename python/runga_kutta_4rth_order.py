@@ -28,17 +28,13 @@ def runga_kutta(f, xr, y0, h):
 	# x array using constant difference in interval
 	x = arange(xr[0], xr[1]+h, h)
 
+	# runga kutta method:
+ 	# y1 = y0 + 1/6(k1+k2+k3+k4)
+
 	# loop through for xi -> yi
 	for i in range(1, len(x)):
-		# runga kutta method:
-		# y1 = y0 + 1/6(k1+k2+k3+k4)
-		# 
-		# k1 = h*f(x(i-1),y(i-1))
-        # k2 = h*f( x(i-1)+(h/2), y(i-1)+(h/2*k1) )
-        # k3 = h*f( x(i-1)+(h/2), y(i-1)+(h/2*k2) )
-        # k4 = h*f( x(i-1)+h, y(i-1)+(h*k3) )
-	    k1 = h*f (x[i-1],y[i-1])
 
+	    k1 = h*f (x[i-1],y[i-1])
 	    k2 = h*f (x[i-1]+(h/2), y[i-1]+(h/2*k1))
 	    k3 = h*f (x[i-1]+(h/2), y[i-1]+(h/2*k2))
 	    k4 = h*f (x[i-1]+h, y[i-1]+(h*k3))
