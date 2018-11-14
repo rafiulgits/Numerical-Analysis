@@ -73,7 +73,6 @@ def main():
 	# define the function
 	f = lambda x, y : x+y
 
-	# call runga kutta with params
 	e = euler(f, [0,1], 1, 0.1)
 	r = runga_kutta(f, [0,1], 1, 0.1)
 
